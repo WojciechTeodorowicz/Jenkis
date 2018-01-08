@@ -1,9 +1,5 @@
 pipeline {
-    agent {
-        docker {
-            args '-v $HOME/.m2:/root/.m2'
-        }
-    }
+   agent any
     stages {
         stage('Build') {
             steps {
